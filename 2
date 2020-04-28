@@ -1,0 +1,22 @@
+#include <cstdlib>
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+int count;
+
+if (argc > 1)
+{
+for(int count = 1;count < argc; count++)
+if (strcmp(argv[1], "./program") == 0)
+cout<<'\0';
+else
+if (argv[1]!= "./program") { cout << "Error: Missing argument ./program" << endl; return 0;}
+}
+
+system("uname -r;uname -m;free –m;hostname -I;dmesg | grep blocks;id -u -n");
+return 0;
+}
